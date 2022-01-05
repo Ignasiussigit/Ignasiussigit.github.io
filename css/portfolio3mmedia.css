@@ -1,0 +1,93 @@
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* UNTUK MEDIA MAX-WIDTH 991PX */
+
+@media (max-width: 991px){
+
+    .header1,
+    .header2{
+        padding: 2rem;
+    }
+
+    .header2 #menu-bar{
+        display: initial;
+    }
+    .header2 .navbar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: #fff;
+        padding: 1rem 2rem;
+        display: none;
+    }
+    .header2 .navbar a {
+        font-size: 1.7rem;
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border: .1rem solid blue;
+        
+    }
+}
+
+section{
+    padding: 2rem;
+}
+
+.box-container{
+    grid-template-columns: .7fr 2fr;
+}
+
+.box-container .left-col a{
+    justify-content: space-between;
+}
+
+/* UNTUK MEDIA MAX-WIDTH 768PX */
+
+@media (max-width: 768px){
+
+    .header1 .search-box-container {
+        width: 30rem;
+    }
+
+    .box-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .box-container .right-col img {
+        margin-top: 2rem;
+    }
+}
+
+
+/* UNTUK MEDIA MAX-WIDTH 450PX */
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+    .headear1{
+        flex-flow: column;
+    }
+    .header1 .search-box-container{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer .box-container .box .icon a {
+        font-size: 40px;
+    }
+
+    .credit{
+        font-size: 1rem;
+    }
+
+}
